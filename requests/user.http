@@ -1,0 +1,52 @@
+#cria um usuário
+POST http://127.0.0.1:8000/users/ HTTP/1.1
+content-type: application/json
+
+{
+    "email": "poliana@gmail.com",
+    "name": "poli",
+    "password": "poli",
+    "addresses": [],
+    "shopping_cart":{
+        "user_email": "poliana@gmail.com",
+        "products": [],
+        "price_credit": 0.0,
+        "price_debit": 0.0,
+        "number_of_items": 0,
+        "delivery_address": {}
+        },
+    "transaction_history":{
+        "user_email": "poliana@gmail.com",
+        "transaction_history": []
+    }
+}
+####
+
+
+
+
+#pesquisa usuario
+GET http://127.0.0.1:8000/users/taila@gmail.com HTTP/1.1
+####
+
+
+
+
+#deleta usuario
+DELETE http://127.0.0.1:8000/users/taila@gmail.com HTTP/1.1
+
+
+
+
+
+####
+# atualiza usuario
+PUT http://127.0.0.1:8000/users/taila@gmail.com HTTP/1.1
+content-type: application/json
+
+{
+    "name": "aaaaaaaa",
+    "password": "aaaaaaaa"
+}
+
+####

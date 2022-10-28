@@ -1,0 +1,34 @@
+POST http://127.0.0.1:8000/products/ HTTP/1.1
+content-type: application/json
+
+{
+    "id": "00005",
+    "category": "Cama",
+    "subcategory": "aaaa",
+    "name": "Kit Berço Trança Nuvem de Amor",
+    "description": "Um conjunto completo com tudo o que você precisa para aconchegar e proteger sua menina. O protetor lateral e a cabeceira vêm com zíper, para facilitar a lavagem, e amarril, para fixação no berço. São 9 peças confeccionadas com materiais de qualidade e enchimento fofinho que você vai amar!",
+    "specifications": "01 Edredom de Berço acolchoado em matelassê , 01 Cabeceira bordada com amarril e zíper 65cm larg. x 45cm alt., 01 Protetor lateral estampado de poás com amarril e zíper 1,30m larg. x 28cm alt., 01 Trança Protetora com amarril 1,20m larg. x 15cm alt., 01 Travesseiro 28cm comp. x 20cm larg., 01 Lençol de berço com elástico 1,55m comp. x 1,05m larg., 01 Fronha 35cm comp. x 25cm larg., 01 Mosquiteiro varal de tule 6m comp., 01 Bandô decorativo para mosquiteiro 1,35m larg. x 18cm alt.",
+    "brand": "Grão de Gente",
+    "color": "Rose",
+    "price": 240.26,
+    "picture": ""
+}
+
+####
+GET http://127.0.0.1:8000/products/00002/ HTTP/1.1
+####
+GET http://127.0.0.1:8000/products/search/berço%20trança/ HTTP/1.1
+####
+DELETE http://127.0.0.1:8000/products/00003/ HTTP/1.1
+####
+PUT http://127.0.0.1:8000/products/00001/ HTTP/1.1
+content-type: application/json
+
+{
+    "name": "aaaaaaaa",
+    "category": "aaaaaaaa",
+    "color": "aaaaaaaa",
+    "price": 100000
+}
+
+####

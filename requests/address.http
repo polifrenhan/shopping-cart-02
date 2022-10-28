@@ -1,0 +1,42 @@
+POST http://127.0.0.1:8000/poliana@gmail.com/addresses/ HTTP/1.1
+content-type: application/json
+
+{
+    "id": "0000d1",
+    "nickname": "casa",
+    "street": "rua",
+    "house_number": "10",
+    "zipcode": "10",
+    "city": "sl",
+    "state": "Mg"
+}
+
+####
+GET http://127.0.0.1:8000/poliana@gmail.com/addresses/ HTTP/1.1
+####
+
+
+GET http://127.0.0.1:8000/poliana@gmail.com/addresses/00002 HTTP/1.1
+
+
+#########
+
+DELETE http://127.0.0.1:8000/poliana@gmail.com/addresses/ HTTP/1.1
+
+#######
+DELETE http://127.0.0.1:8000/poliana@gmail.com/addresses/00002 HTTP/1.1
+
+#########
+
+PUT http://127.0.0.1:8000/poliana@gmail.com/addresses/00002/ HTTP/1.1
+content-type: application/json
+
+{
+    "id": "00002",
+    "nickname": "asssss",
+    "street": "rua",
+    "house_number": "10",
+    "zipcode": "10",
+    "city": "sl",
+    "state": "Mg"
+}
